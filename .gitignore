@@ -1,0 +1,6 @@
+CSharpCode.csproj
+CSharpCode.sln
+CSharpCode.v11.suo
+bin/*
+obj/*
+Properties/*
