@@ -4,3 +4,6 @@ CSharpCode.v11.suo
 bin/*
 obj/*
 Properties/*
+packages/*
+TestResults/*
+packages.config
