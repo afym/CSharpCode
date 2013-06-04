@@ -10,9 +10,7 @@ namespace CSharpCode
     {
         public static void Main() 
         {
-            string date = Classes.TypeClass.PrintMessage();
-            Console.WriteLine(date);
-            Console.ReadLine();
+
         }
     }
 }
