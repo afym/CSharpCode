@@ -9,8 +9,10 @@ namespace CSharpCode
     public class Init
     {
         public static void Main() 
-        { 
-        
+        {
+            string date = Classes.TypeClass.PrintMessage();
+            Console.WriteLine(date);
+            Console.ReadLine();
         }
     }
 }

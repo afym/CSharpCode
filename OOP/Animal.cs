@@ -8,8 +8,8 @@ namespace CSharpCode.OOP
         public string Name { set; get;}
         public AnimalType Type { set;  get; }
 
-        public abstract string Run();
-        public abstract string Fly();
-        public abstract string Swim();
+        public abstract bool CanRun();
+        public abstract bool CanFly();
+        public abstract bool CanSwim();
     }
 }

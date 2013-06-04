@@ -7,17 +7,45 @@ namespace CSharpCode.OOP
         public LandAnimal()
         {
             AnimalType type = new AnimalType();
+            type.Name = "Land";
             type.Code = type.getTypeCode(EAnimalTypes.Land);
+
+            this.Name = "Empty";
+            this.Type = type;
         }
 
         public string getDescription() 
         {
-            return "";
+            return "I am a " + this.Name;
         }
 
-        public override string Run() { return ""; }
-        public override string Fly() { return ""; }
-        public override string Swim() { return ""; }
-        
+        public override bool CanRun()
+        {
+            if(this.Type.Code == 'L') 
+            {
+                return true;
+            }
+
+            return false; 
+        }
+
+        public override bool CanFly() 
+        {
+            if (this.Type.Code  == 'F') {
+                return true;
+            }
+
+            return false;
+        }
+
+        public override bool CanSwim()
+        { 
+            if(this.Type.Code == 'S')
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
 }
